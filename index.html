@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="Calculos.js"></script>
+    <title>juego frio y caliente</title>
+</head>
+<body>
+    <h1>Hora de jugar ¡quemados!</h1>
+    <h2>instrucciones: ingresa un numero en la consola, cada vez que ingreses un numero el sistema te dira si estas por arriba o por abajo, la temperatura te indica que tan cerca estas <br>
+    de adiviar, entre mas caliente mejor, intentalo hasta lograr quemarte.</h2>
+    <div class="container">
+        
+        <div class="termometro">
+            <div class="temp"><img id="temp_goal" src="imagenes/temp_goal_icon.png" alt="goal"></div>
+            <div class="temp"><img id="temp_hot" src="imagenes/hot_icon.png" alt="hot"></div>
+            <div class="temp"><img id="temp_cold" src="imagenes/cold_icon.png" alt="cold"></div>
+        </div>
+
+        <div class="consola_de_datos">
+            <div id="pantalla"></div>
+            <input type="number" id="entradaUsuario">
+            <button onclick='envioNumUsuario()'>Enviar Numero</button>
+        </div>
+        
+        <div class="direcciones">
+            <div class="orientacion"><img id="direccion_up" src="imagenes/up_icon.png" alt="up"></div>
+            <div class="orientacion"><img id="direccion_down"src="imagenes/down_icon.png" alt="down"></div>
+        </div>
+    </div>
+
+
+    <script src="javaCodigo.js"></script>
+    
+</body>
+</html>
